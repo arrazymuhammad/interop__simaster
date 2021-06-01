@@ -11,20 +11,20 @@
     <meta content="SIMASTER UGM" name="description" />
     <meta content="Ar-Razy Muhammad" name="author" />
     <link href="https://simaster.ugm.ac.id/ugmfw-assets/images/favicon.ico" rel="shortcut icon">
-    <link href="{{ url('/') }}/assets/plugins/pace/pace-theme-flash.css" rel="stylesheet" type="text/css" />
+    <link href="{{ url('public') }}/assets/plugins/pace/pace-theme-flash.css" rel="stylesheet" type="text/css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css" rel="stylesheet"
         type="text/css" />
-    <link href="{{ url('/') }}/assets/plugins/font-awesome/css/font-awesome.css" rel="stylesheet"
+    <link href="{{ url('public') }}/assets/plugins/font-awesome/css/font-awesome.css" rel="stylesheet"
         type="text/css" />
-    <link href="{{ url('/') }}/assets/plugins/jquery-scrollbar/jquery.scrollbar.css" rel="stylesheet"
+    <link href="{{ url('public') }}/assets/plugins/jquery-scrollbar/jquery.scrollbar.css" rel="stylesheet"
         type="text/css" media="screen" />
-    <link href="{{ url('/') }}/assets/plugins/select2/css/select2.min.css" rel="stylesheet" type="text/css"
+    <link href="{{ url('public') }}/assets/plugins/select2/css/select2.min.css" rel="stylesheet" type="text/css"
         media="screen" />
-    <link href="{{ url('/') }}/assets/plugins/switchery/css/switchery.min.css" rel="stylesheet" type="text/css"
+    <link href="{{ url('public') }}/assets/plugins/switchery/css/switchery.min.css" rel="stylesheet" type="text/css"
         media="screen" />
-    <link href="{{ url('/') }}/pages/css/pages-icons.css" rel="stylesheet" type="text/css">
-    <link class="main-stylesheet" href="{{ url('/') }}/pages/css/pages.css" rel="stylesheet" type="text/css" />
-    <link class="main-stylesheet" href="{{ url('/') }}/assets/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="{{ url('public') }}/pages/css/pages-icons.css" rel="stylesheet" type="text/css">
+    <link class="main-stylesheet" href="{{ url('public') }}/pages/css/pages.css" rel="stylesheet" type="text/css" />
+    <link class="main-stylesheet" href="{{ url('public') }}/assets/css/style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body class="fixed-header ">
