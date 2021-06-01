@@ -17,7 +17,8 @@ class Menu extends Component
      */
     public function render()
     {
-        return view("components.layout.menu.admin");
+        if (auth()->guard('web')->check()) return view("components.layout.menu.pegawai");
+        if (auth()->guard('mahasiswa')->check()) return view("components.layout.menu.mahasiswa");
     }
 
     public function isActive($segment, $item)

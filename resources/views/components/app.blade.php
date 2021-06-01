@@ -8,8 +8,7 @@
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no" />
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <meta content="Digital Sistem Informasi Manajemen Terpadu Dinas Penanaman Modal dan Pelayanan Terpadu Satu Pintu"
-        name="description" />
+    <meta content="SIMASTER UGM" name="description" />
     <meta content="Ar-Razy Muhammad" name="author" />
     <link href="https://simaster.ugm.ac.id/ugmfw-assets/images/favicon.ico" rel="shortcut icon">
     <link href="{{ url('/') }}/assets/plugins/pace/pace-theme-flash.css" rel="stylesheet" type="text/css" />

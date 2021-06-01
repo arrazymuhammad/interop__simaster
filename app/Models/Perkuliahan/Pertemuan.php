@@ -11,4 +11,5 @@ class Pertemuan extends Model
     use PertemuanAttributes, PertemuanRelationship;
 
     protected $table = 'perkuliahan__kelas__pertemuan';
+    public $fillable = ['id_kelas', 'tanggal_pelaksanaan', 'pertemuan_ke'];
 }

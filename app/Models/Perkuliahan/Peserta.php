@@ -11,4 +11,5 @@ class Peserta extends Model
     use PesertaAttributes, PesertaRelationship;
 
     protected $table = 'perkuliahan__kelas__peserta';
+    public $fillable = ['id_kelas', 'id_mahasiswa'];
 }

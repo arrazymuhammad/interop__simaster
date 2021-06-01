@@ -13,10 +13,12 @@ class Table extends Component
      */
     public $header;
     public $datatable = false;
-    public function __construct($header = null, $datatable = false)
+    public $withAction = true;
+    public function __construct($header = null, $datatable = false, $noAction = null)
     {
         $this->header = $this->getHeader($header);
         if ($datatable) $this->datatable = true;
+        if ($noAction) $this->withAction = false;
     }
 
     public function render()

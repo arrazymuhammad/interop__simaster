@@ -10,5 +10,6 @@ class Kelas extends Model
 {
     use KelasAttributes, KelasRelationship;
 
-    protected $table = 'perkuliahan__kelas';
+    protected $table = 'perkuliahan__kelas__matakuliah';
+    public $fillable = ['id_dosen', 'id_matakuliah', 'id_semester', 'nama'];
 }

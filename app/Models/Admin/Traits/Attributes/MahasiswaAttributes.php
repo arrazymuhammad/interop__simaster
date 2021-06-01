@@ -8,4 +8,8 @@ trait MahasiswaAttributes
     {
         $this->attributes['password'] = bcrypt($value);
     }
+    public function getNamaGelarAttribute()
+    {
+        return $this->nama;
+    }
 }

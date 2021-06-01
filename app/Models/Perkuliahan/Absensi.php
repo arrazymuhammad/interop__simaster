@@ -11,4 +11,5 @@ class Absensi extends Model
     use AbsensiAttributes, AbsensiRelationship;
 
     protected $table = 'perkuliahan__kelas__absensi';
+    public $fillable = ['id_mahasiswa', 'id_pertemuan'];
 }

@@ -3,13 +3,13 @@
 namespace App\Models\Perkuliahan\Traits\Relationship;
 
 use App\Models\Admin\Mahasiswa;
-use App\Models\Admin\Matakuliah;
+use App\Models\Perkuliahan\Kelas;
 
 trait PesertaRelationship
 {
-    public function matakuliah()
+    public function kelas()
     {
-        return $this->belongsTo(Matakuliah::class, 'id_matakuliah');
+        return $this->belongsTo(Kelas::class, 'id_kelas');
     }
     public function mahasiswa()
     {

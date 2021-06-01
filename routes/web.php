@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AuthController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,8 +14,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::redirect('/', 'login')->middleware('auth');
+Route::get('/login', [AuthController::class, 'login'])->name('login');
+Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
+Route::post('/login', [AuthController::class, 'loginProcess']);
 
-Route::prefix('admin')->group(fn () => include "_/admin.php");
+Route::prefix('admin')->middleware('auth')->group(fn () => include "_/admin.php");
+Route::prefix('dosen')->middleware('auth')->group(fn () => include "_/dosen.php");
+Route::prefix('mahasiswa')->middleware('auth:mahasiswa')->group(fn () => include "_/mahasiswa.php");

@@ -2,11 +2,11 @@
 
 namespace App\Models\Admin;
 
-use App\Models\Model;
+use App\Models\ModelAuthenticable;
 use App\Models\Admin\Traits\Attributes\PegawaiAttributes;
 use App\Models\Admin\Traits\Relationship\PegawaiRelationship;
 
-class Pegawai extends Model
+class Pegawai extends ModelAuthenticable
 {
     use PegawaiAttributes, PegawaiRelationship;
 

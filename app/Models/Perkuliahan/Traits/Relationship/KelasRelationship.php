@@ -3,8 +3,9 @@
 namespace App\Models\Perkuliahan\Traits\Relationship;
 
 use App\Models\Admin\Dosen;
-use App\Models\Admin\Matakuliah;
 use App\Models\Admin\Semester;
+use App\Models\Admin\Matakuliah;
+use App\Models\Perkuliahan\Peserta;
 use App\Models\Perkuliahan\Pertemuan;
 
 trait KelasRelationship
@@ -21,8 +22,12 @@ trait KelasRelationship
     {
         return $this->belongsTo(Semester::class, 'id_semester');
     }
+    public function peserta()
+    {
+        return $this->hasMany(Peserta::class, 'id_kelas');
+    }
     public function pertemuan()
     {
-        return $this->hasMany(Pertemuan::class, 'id_pertemuan');
+        return $this->hasMany(Pertemuan::class, 'id_kelas');
     }
 }

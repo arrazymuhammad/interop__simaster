@@ -14,4 +14,8 @@ trait SemesterAttributes
         $list_class = ['default', 'success'];
         return "<label class='label label-" . $list_class[$this->is_active] . "'>" . $list_status[$this->is_active] . "</label>";
     }
+    public function getSemesterTahunStringAttribute()
+    {
+        return "Semester " . $this->semester_string . " " . $this->tahun . "/" . ($this->tahun + 1);
+    }
 }

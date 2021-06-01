@@ -15,9 +15,10 @@ class CreatePerkuliahanKelasMatakuliahTable extends Migration
     {
         Schema::create('perkuliahan__kelas__matakuliah', function (Blueprint $table) {
             $table->uuid('uuid');
-            $table->uuid('id_mata_kuliah');
+            $table->uuid('id_matakuliah');
             $table->uuid('id_dosen');
             $table->uuid('id_semester');
+            $table->string('nama');
             $table->timestamps();
             $table->primary('uuid');
         });

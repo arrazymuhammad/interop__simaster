@@ -1,7 +1,9 @@
 <table class="table table-striped table-bordered @if ($datatable) table-datatable @endif">
     <thead>
-        <th width="50px">No</th>
-        <th width="150px">Aksi</th>
+        @if ($withAction)
+            <th width="50px">No</th>
+            <th width="150px">Aksi</th>
+        @endif
         @foreach ($header as $h)
             <th>{{ $h }}</th>
         @endforeach
