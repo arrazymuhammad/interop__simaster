@@ -6,7 +6,8 @@
         <button class="profile-dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true"
             aria-expanded="false">
             <span class="thumbnail-wrapper d32 circular inline">
-                <img src="{{ url(auth()->user()->foto_profile ?? 'assets/img/avatar.jfif') }}" width="32" height="32">
+                <img src="{{ url(auth()->user()->foto_profile ?? 'public/assets/img/avatar.jfif') }}" width="32"
+                    height="32">
             </span>
         </button>
         <div class="dropdown-menu dropdown-menu-right profile-dropdown" role="menu">
