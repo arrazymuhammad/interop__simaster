@@ -10,8 +10,6 @@
             <span class="{{ $isActiveIcon(2, 'dashboard') }}"><i class="fa fa-home"></i></span>
         </li>
         @if (auth()->user()->is_admin)
-            <hr>
-            <li><label class="pl-3">Admin</label></li>
             <li class="{{ $isActive(2, 'master') }}">
                 <a href="javascript:;">
                     <span class="title">Master Data</span>
@@ -69,13 +67,11 @@
         @endif
 
         @if (auth()->user()->is_dosen)
-            <hr>
-            <li><label class="pl-3">Dosen</label></li>
             <li class="{{ $isActive(2, 'kelas-dosen') }}">
                 <a href="{{ url('dosen/kelas-dosen') }}">
                     <span class="">Perkuliahan</span>
                 </a>
-                <span class="{{ $isActiveIcon(2, 'kelas-dosen') }}"><i class="fa fa-users"></i></span>
+                <span class="{{ $isActiveIcon(2, 'kelas-dosen') }}"><i class="fa fa-calendar"></i></span>
             </li>
         @endif
     </ul>

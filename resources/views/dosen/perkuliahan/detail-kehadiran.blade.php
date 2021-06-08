@@ -24,7 +24,7 @@
 
         </x-slot>
         <x-component.table header="No|Tanggal|Pertemuan Ke|Status" noAction>
-            @foreach ($list_pertemuan as $pertemuan)
+            @foreach ($list_pertemuan->sortBy('pertemuan_ke') as $pertemuan)
                 <tr>
                     <td>{{ $loop->iteration }}</td>
                     <td>{{ $pertemuan->tanggal_pelaksanaan_string }}</td>

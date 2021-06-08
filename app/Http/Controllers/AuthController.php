@@ -11,6 +11,7 @@ class AuthController extends Controller
 
     public function login()
     {
+
         if (auth()->check()) {
             if (auth()->user()->is_admin == 1) return redirect('admin/dashboard');
             return redirect('dosen/dashboard');

@@ -20,7 +20,7 @@
                 <button class="btn btn-info"><i class="fa fa-save"></i> Simpan</button>
             </x-slot>
             <x-component.table header="No|Aksi|NIM|Nama" noAction>
-                @foreach ($list_peserta->sortBy('peserta.nim') as $peserta)
+                @foreach ($list_peserta->sortBy('peserta.mahasiswa.nim') as $peserta)
                     <tr>
                         <td width="50px">{{ $loop->iteration }}</td>
                         <td width="50px">

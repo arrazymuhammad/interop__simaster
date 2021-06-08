@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers\Admin\Master;
 
-use App\Http\Controllers\Controller;
-use App\Models\Admin\Pegawai;
 use Illuminate\Http\Request;
+use App\Models\Admin\Pegawai;
+use App\Http\Controllers\Controller;
 
 class PegawaiController extends Controller
 {

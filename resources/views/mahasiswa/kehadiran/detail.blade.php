@@ -11,9 +11,9 @@
             @foreach ($list_pertemuan->sortBy('pertemuan_ke') as $pertemuan)
                 <tr>
                     <td width="150px" class="text-center">{{ $pertemuan->pertemuan_ke }}</td>
-                    <td>-</td>
-                    <td>-</td>
                     <td>{{ $pertemuan->tanggal_pelaksanaan_string }}</td>
+                    <td>-</td>
+                    <td>-</td>
                     <td class="text-center">{!! $pertemuan->checkStatus($id_mahasiswa) !!}</td>
                 </tr>
             @endforeach

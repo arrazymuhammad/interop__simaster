@@ -21,7 +21,7 @@
                     class="fa fa-users"></i> Data Peserta</a>
         </x-slot>
         <x-component.table header="NIM|Nama|Persentase Kehadiran" datatable>
-            @foreach ($list_peserta->sortBy('peserta.nim') as $peserta)
+            @foreach ($list_peserta->sortBy('peserta.mahasiswa.nim') as $peserta)
                 <tr>
                     <td>{{ $loop->iteration }}</td>
                     <td>
